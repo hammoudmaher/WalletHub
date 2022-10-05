@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Proxima';
+  src:url("../fonts/ProximaNova-Reg.otf");
+}
+
+@font-face {
+  font-family: 'Proxima Bold';
+  src:url("../fonts/ProximaNova-Bold.otf");
+}
+
+
+body{ background-color: #F1F5F8; font-family:'Proxima'}
+
+header{background:#23123a; padding-top:2rem;}
+header nav{ background-color:#FFFFFF}
+header nav ul{margin-bottom: 0}
+header nav a{ display: block;padding:20px 0; text-align: center; font-size: 1.2em;color:#000}
+header nav li:not(:first-child) a{border-left:1px solid #ebedee}
+header nav a:hover,header nav a:visited,header nav a:active{text-decoration: none;color:#59D8D1; }
+
+@media (max-width: 768px) {
+	header nav a span{display: none}
+}
+
+.banner{position: relative}
+.banner img{width: 100%}
+.banner .block-in{ position: absolute; left:0; right:0; top:3rem; color :#fff}
+.banner h4{ font-family: "Proxima Bold"}
+
+@media (min-width: 1024px) {
+	.banner h4{font-size: 7rem}
+}
+
+@media (min-width: 600px) and (max-width:1023px) {
+    .banner h4{font-size: 4rem}
+}
+.page-title{color:#373737;padding:2rem 0 1.5rem 0; font-family: "Proxima Bold"; font-size:1.6rem}
+
+.home-listing .block-in{background-color:#fff;padding:2rem; margin-bottom: 2rem;}
+.home-listing  .cards-info { text-align: center;padding-bottom:1rem}
+.home-listing  .cards-info .status{padding:4px 10px; border-radius: 30px; color: #fff; display: inline-block; margin-top: 10px}
+.home-listing .cards-info .status.green{ background-color: #58d8d1}
+.home-listing .brief{ color:#000;}
+.home-listing .brief a{color:#1194F6 }
+
+.btn-apply{ background-color:#fa6e3d;color:#fff}
+.home-listing .btn-apply{padding:.5rem 1rem; display:block;margin-bottom:1rem}
+
+.home-listing .view-all{ border-top:1px solid #718992; padding-top:1rem}
+.home-listing .view-all a{color:#1194F6}
+
+.rating {float:right}
+.rating label{color:#000}
+.rating span{display: inline-block;position: relative;width: 16px; height: 16px; font-size:14px;color:#59D8D1}
+.rating > span::before{ content: "\2605";position: absolute;opacity: 0;}
+.rating > span.filled::before{opacity:1}
+
+.home-listing .block-title{overflow: hidden; padding-bottom: 1rem}
+.home-listing .block-title h5{float: left}
+
+@media (max-width: 767px) {
+	.rating {display: none}
+}
